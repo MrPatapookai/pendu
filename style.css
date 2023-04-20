@@ -1,0 +1,267 @@
+/* CSS pour la page d'accueil */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 24px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    padding: 20px;
+    flex-basis: calc(33.33% - 20px);
+    text-align: center;
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+label[for="username"], label[for="password"] {
+    font-size: 18px;
+}
+
+
+.card form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+    margin: 0;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    margin: 0;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 767px) {
+
+    /* CSS pour les écrans de moins de 768px de large */
+    .card {
+        flex-basis: 100%;
+    }
+}
+
+/* CSS pour la page des règles */
+h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* CSS pour les boutons */
+.button {
+    display: inline-block;
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.footer {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+    .button {
+        font-size: 12px;
+        padding: 5px 10px;
+        margin: 5px;
+    }
+}
+
+/* CSS pour la page de score */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+table {
+    margin-top: 10px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    padding: 10px;
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 1.2em;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 1.2em;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.button-group {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* CSS pour la page du jeu du Pendu */
+
+.jeu .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.jeu header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.jeu header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.word-container {
+    margin-bottom: 20px;
+}
+
+.word {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-size: 24px;
+}
+
+input[type="text"] {
+    font-size: 24px;
+    margin: 10px 0;
+    padding: 5px;
+}
+
+button#submit-button {
+    font-size: 24px;
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button#submit-button:hover {
+    background-color: #0056b3;
+    transition: all 0.3s ease;
+}
+
+.hangman-container {
+    margin: 20px 0;
+}
+
+.attempts-container {
+    font-size: 24px;
+}
+
+.button-back {
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button-back:hover {
+    background-color: #0056b3;
+}
